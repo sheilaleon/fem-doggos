@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #212122;
+  color: #ded3c9;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 18pt;
+  min-height: 150px;
+}
+
+.interactive {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all;
+  transition-duration: 150ms;
+  animation: ease-in-out;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.fetch-btn {
+  background-color: #517144;
+  color: #ded3c9;
+}
+
+.fetch-btn:hover,
+.select:hover {
+  filter: brightness(115%);
+}
+
+.fetch-btn:active,
+.select:active {
+  filter: brightness(70%);
+}
+
+form {
+  padding: 0;
+  margin: 0 1rem;
+}
+.select {
+  display: block;
+  background: #517144 url(./assets/chevron-down.svg) 0 0 no-repeat;
+  background-position: right 10px top 50%;
+  color: #ded3c9;
+  border-radius: 5px;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 1rem 2rem 1rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 5px;
+  margin: 1rem;
+  width: 200px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(33, 33, 34, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  width: 60px;
+  border-radius: 0;
+  margin: 0;
+}
